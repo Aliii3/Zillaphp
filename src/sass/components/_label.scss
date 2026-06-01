@@ -1,0 +1,26 @@
+.label {
+	display: block;
+	width: fit-content;
+	height: 23px;
+	line-height: 26px;
+	padding: 0 10px;
+	color: #fff;
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 14px;
+	text-transform: capitalize;
+	text-align: left;
+	text-decoration: none;
+	&.report-label {
+		background-color: #49c8ef;
+	}
+	&.news-label {
+		background-color: #0043ad;
+	}
+	&.insight-label {
+		background-color: #165e96;
+	}
+	@media screen and (min-width: map-get($map: $grid-breakpoints, $key: lg)) {
+		display: inline-block;
+		width: auto;
+	}
+}

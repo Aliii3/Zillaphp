@@ -1,0 +1,142 @@
+/* site base */
+.custom_section_v1 {
+  margin-top: 35px;
+}
+
+.custom_section_v1 .card {
+  margin-bottom: 54px;
+}
+
+.custom_section_v1 .card .image_wrapper {
+  position: relative;
+  width: 254px;
+  height: 275px;
+  left: 25%;
+}
+
+.custom_section_v1 .card .image_wrapper img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.custom_section_v1 .card .section_subtitle {
+  margin: 20px 0 22px;
+  font-size: 28px;
+  letter-spacing: 0.28px;
+}
+
+.custom_section_v1 .card_content ul {
+  list-style-type: none;
+}
+
+.custom_section_v1 .card_content ul li {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.75;
+  letter-spacing: 0.16px;
+  color: #12264a;
+  position: relative;
+  padding-left: 25px;
+}
+
+.custom_section_v1 .card_content ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/*
+.custom_section_v1 .card_content ul li:before {
+  position: absolute;
+  content: '';
+  width: 11px;
+  height: 11px;
+  -ms-transform: rotate(45deg) scale(0.75);
+      transform: rotate(45deg) scale(0.75);
+  left: 0;
+  top: 5px;
+  background-color: #4dc8ed;
+}*/
+
+.custom_section_v1 .card_content ul li:before {
+  background-image: url("/wp-content/uploads/2021/05/bullet-icon-small.svg");
+    width: 18px;
+    height: 20px;
+    background-size: contain;
+	
+	position: absolute;
+	content: '';
+    left: 0;
+    top: 5px;
+}
+
+@media screen and (min-width: 992px) {
+  .custom_section_v1 {
+    margin: 70px 0 148px;
+  }
+  .custom_section_v1 .card {
+    margin-bottom: 0;
+  }
+  .custom_section_v1 .card .image_wrapper::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+  }
+  .custom_section_v1 .card .image_wrapper:after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    background-color: #bcefff;
+    opacity: 0.8;
+    z-index: -1;
+  }
+  .custom_section_v1 .card .image_wrapper.arrow_right:before {
+    top: 73px;
+    right: -72px;
+/*    background-image: url("../images/role-arrow-right.svg");*/
+  }
+  .custom_section_v1 .card .image_wrapper.arrow_right:after {
+    top: 85px;
+    right: -450px;
+  }
+  .custom_section_v1 .card .image_wrapper.arrow_left:before {
+    top: 116px;
+    left: -72px;
+/*    background-image: url("../images/role-arrow-left.svg");*/
+  }
+  .custom_section_v1 .card .image_wrapper.arrow_left:after {
+    width: 400;
+    top: 128px;
+    left: -450px;
+  }
+  .custom_section_v1 .card .section_subtitle {
+    margin: 28px 0 21px;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+  }
+  .custom_section_v1 .card_content ul li {
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    position: relative;
+    padding-left: 25px;
+  }
+  .custom_section_v1 .card_content ul li:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  .custom_section_v1 .card_content ul li:before {
+    width: 18px;
+    height: 20px;
+  }
+  .custom_section_v1 .custom-offset {
+    margin-left: 15%;
+  }
+}
+
+/*# sourceMappingURL=custom-section-v1.css.map */

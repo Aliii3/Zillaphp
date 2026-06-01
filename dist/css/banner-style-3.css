@@ -1,0 +1,51 @@
+.banner_style_3 {
+  background-color: #f6f9fb;
+  margin-top: -30px;
+  padding: 27px 0 38px;
+}
+
+@media screen and (min-width: 992px) {
+  .banner_style_3 {
+    padding: 33px 0 28px;
+    margin-top: -50px;
+  }
+}
+
+.banner_style_3 h3 {
+  margin-bottom: 16px;
+  font-family: 'Mermaid';
+  font-weight: normal;
+  color: #4dc8ed;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .banner_style_3 h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+}
+
+.banner_style_3 a {
+  display: block;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  color: #12264a;
+  line-height: 1.21;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 992px) {
+  .banner_style_3 a {
+    margin-bottom: 0;
+  }
+}
+
+.banner_style_3 ul li a {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=banner-style-3.css.map */

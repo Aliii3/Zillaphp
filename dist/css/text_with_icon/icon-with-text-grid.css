@@ -1,0 +1,110 @@
+/* site base */
+.text_with_icon_item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 30px;
+}
+
+.text_with_icon_item .icon_wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e8faff;
+  margin-right: 15px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 8px;
+}
+
+.text_with_icon_item .icon_wrapper img {
+  display: block;
+  width: 23px;
+  height: 23px;
+  object-fit: contain;
+}
+
+.text_with_icon_item .text_wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.text_with_icon_item .text_wrapper span {
+  font-family: 'Source Sans 3', sans-serif; font-weight: 600;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: #12264a;
+  font-size: 16px;
+  line-height: 1.25;
+  width: 100%;
+  color: #12264a;
+}
+
+.text_with_icon_item .text_wrapper p {
+  font-family: 'Source Sans 3', sans-serif; font-weight: 300;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.21;
+  color: #7b8591;
+  word-wrap: normal;
+}
+
+@media screen and (min-width: 992px) {
+  .text_with_icon_item .icon_wrapper {
+    width: 90px;
+    height: 90px;
+    margin-right: 24px;
+  }
+  .text_with_icon_item .icon_wrapper img {
+    width: 50px;
+    height: 50px;
+  }
+  .text_with_icon_item .text_wrapper span {
+    font-family: 'Source Sans 3', sans-serif; font-weight: 600;
+    font-size: 50px;
+    line-height: 1.3;
+    color: #12264a;
+    width: 100%;
+  }
+  .text_with_icon_item .text_wrapper p {
+    width: 100%;
+    margin: 0;
+    font-family: 'Source Sans 3', sans-serif; font-weight: 300;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #7b8591;
+    text-transform: capitalize;
+  }
+}
+
+.text-with-icon-grid {
+  margin-top: 295px;
+}
+
+.text-with-icon-grid .section_subtitle {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 992px) {
+  .text-with-icon-grid {
+    margin-top: 0;
+    padding: 130px 0 205px;
+  }
+  .text-with-icon-grid .section_subtitle {
+    margin-bottom: 71px;
+  }
+}
+
+/*# sourceMappingURL=icon-with-text-grid.css.map */

@@ -1,0 +1,105 @@
+@import '../base/bp_variables';
+@import '../base/color_variables';
+
+.internal_page_header {
+	background-color: $primary;
+	background-image: url('../images/z_background.svg');
+	background-repeat: no-repeat;
+	background-position-x: right;
+	margin-bottom: 30px;
+	background-size: 100%;
+	background-position-y: 50px;
+
+	.container {
+		min-height: 180px;
+		display: flex;
+		align-items: flex-end;
+	}
+	h2 {
+		color: #fff;
+		font-family: 'Source Sans 3', sans-serif; font-weight: 100;
+		font-size: 28px;
+		margin-top: 23px;
+		margin-bottom: 43px;
+		position: relative;
+		text-shadow: 0 0 18px rgba(0, 0, 0, 0.18);
+
+		&[data-backdrop]::before {
+			content: attr(data-backdrop);
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			font-family: 'Source Sans 3', sans-serif;
+			font-size: 3em;
+			font-weight: 700;
+			line-height: 1;
+			white-space: nowrap;
+			color: #fff;
+			opacity: 0.06;
+			z-index: 0;
+			pointer-events: none;
+			user-select: none;
+		}
+
+		span {
+			&:first-child {
+				display: block;
+			}
+			&:last-child {
+				font-family: 'Source Sans 3', sans-serif; font-weight: 700;
+			}
+		}
+	}
+	@media screen and (min-width: #{map-get($grid-breakpoints, md)}) and (max-width: map-get($map: $grid-breakpoints, $key: lg)) {
+		background-size: 80%;
+		.container {
+			min-height: 230px;
+		}
+		h2 {
+			font-size: 40px;
+			margin-bottom: 45px;
+		}
+	}
+
+	@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+		background-size: 70%;
+		background-position-y: unset;
+		margin-bottom: 50px;
+		.container {
+			min-height: 299px;
+		}
+		h2 {
+			margin-bottom: 48px;
+			font-size: 55px;
+		}
+	}
+
+	.one_word {
+		@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+			margin-bottom: 85px;
+		}
+	}
+}
+
+/**
+ * Page-specific Styles
+ */
+.page-template-tpl-news .internal_page_header {
+	// height: 300px;
+	h2 {
+		margin-bottom: 85px;
+	}
+}
+
+/**
+ * Page-specific Styles
+ */
+.single-jobpost .internal_page_header {
+	h2 {
+		margin-bottom: 20px;
+		@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+			margin-bottom: 50px;
+		}
+	}
+}

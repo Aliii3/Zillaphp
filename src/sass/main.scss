@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+/* site base */
+@import './base/normalize';
+@import './base/bp_variables';
+@import './base/color_variables';
+@import './base/font-face';
+
+/* cuted images */
+@import './components/svgs_clip';
+
+/* labels */
+@import './components/label';
+
+/* content */
+@import './base/section_title';
+@import './base/section_subtitle';
+@import './base/section_content';
+
+@import './components/not_found';
+
+/* bootstrap modules */
+@import '../../node_modules/bootstrap/scss/bootstrap-grid';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/transitions';
+
+/* Navigation */
+@import './components/navigation/index';
+@import './components/btn'; /* btns */
+@import './components/categories_tabs'; /* tabs */
+@import './components/custom_pagination'; /* pagination */
+@import './components/social-media'; /* social media */
+
+/* footer */
+@import './components/footer/footer';
+
+/* form styles */
+@import './components/form/index';
+
+/* carrers & simple job board Customization */
+@import './components/careers-jobs-list';
+@import './components/sjb/sjb-page';
+@import './components/sjb/sjb_single-page';
+
+/* custom content & sections */
+@import './components/subscription_form';
+@import './components/associates/index';
+@import './components/default_page';
+
+/* override bootstrap container */
+.container {
+	@media screen and (max-width: #{map-get($grid-breakpoints, sm)}) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

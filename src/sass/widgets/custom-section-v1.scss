@@ -1,0 +1,134 @@
+/* site base */
+@import '../base/bp_variables';
+@import '../base/color_variables';
+
+.custom_section_v1 {
+	margin-top: 35px;
+	.card {
+		margin-bottom: 54px;
+		.image_wrapper {
+			position: relative;
+			width: 254px;
+			height: 275px;
+			img {
+				display: block;
+				max-width: 100%;
+				max-height: 100%;
+				position: relative;
+				z-index: 2;
+			}
+		}
+		.section_subtitle {
+			margin: 20px 0 22px;
+			font-size: 28px;
+			letter-spacing: 0.28px;
+		}
+
+		&_content {
+			ul {
+				list-style-type: none;
+				li {
+					font-family: 'Source Sans 3', sans-serif;
+					font-size: 16px;
+					font-weight: normal;
+					line-height: 1.75;
+					letter-spacing: 0.16px;
+					color: $primary;
+					position: relative;
+					padding-left: 25px;
+					&:not(:last-child) {
+						margin-bottom: 20px;
+					}
+					&:before {
+						position: absolute;
+						content: '';
+						width: 11px;
+						height: 11px;
+						transform: rotate(45deg) scale(0.75);
+						left: 0;
+						top: 5px;
+						background-color: $secondary;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (min-width: map-get($map: $grid-breakpoints, $key: lg)) {
+		margin: 70px 0 148px;
+		.card {
+			margin-bottom: 0;
+			.image_wrapper {
+				&::before {
+					content: '';
+					width: 24px;
+					height: 24px;
+					background-repeat: no-repeat;
+					background-size: contain;
+					position: absolute;
+				}
+
+				&:after {
+					content: '';
+					width: 450px;
+					height: 2px;
+					position: absolute;
+					background-color: #bcefff;
+					opacity: 0.8;
+					z-index: -1;
+				}
+
+				&.arrow_right {
+					&:before {
+						top: 73px;
+						right: -72px;
+						background-image: url('../images/role-arrow-right.svg');
+					}
+					&:after {
+						top: 85px;
+						right: -450px;
+					}
+				}
+
+				&.arrow_left {
+					&:before {
+						top: 116px;
+						left: -72px;
+						background-image: url('../images/role-arrow-left.svg');
+					}
+					&:after {
+						width: 400;
+						top: 128px;
+						left: -450px;
+					}
+				}
+			}
+			.section_subtitle {
+				margin: 28px 0 21px;
+				font-size: 50px;
+				letter-spacing: 0.5px;
+			}
+			&_content {
+				ul {
+					li {
+						font-size: 20px;
+						line-height: 1.4;
+						letter-spacing: 0.2px;
+						position: relative;
+						padding-left: 25px;
+						&:not(:last-child) {
+							margin-bottom: 25px;
+						}
+						&:before {
+							width: 15px;
+							height: 15px;
+						}
+					}
+				}
+			}
+		}
+
+		.custom-offset {
+			margin-left: 21%;
+		}
+	}
+}

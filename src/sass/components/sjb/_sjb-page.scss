@@ -1,0 +1,26 @@
+@import "./list_data";
+.sjb-page {
+	margin: 60px 0;
+	.filters-form {
+		margin-bottom: 80px;
+		.btn {
+			width: 50%;
+			margin: auto;
+			margin-top: 20px;
+			padding: 18px 28px;
+			height: 55px;
+			display: block;
+			@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+				margin-top: 60px;
+			}
+			&::after {
+				width: 18px;
+				height: 18px;
+				background-size: contain;
+				margin-left: 0;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}

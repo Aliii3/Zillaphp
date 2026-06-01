@@ -1,0 +1,19 @@
+.not_found {
+	text-align: center;
+	p {
+		color: #7b8591;
+		font-weight: normal;
+		&:first-child {
+			font-family: 'Source Sans 3', sans-serif; font-weight: 700;
+			font-size: 24px;
+			letter-spacing: 0.24px;
+			margin-bottom: 15px;
+		}
+
+		&:last-child {
+			font-family: 'Source Sans 3', sans-serif;
+			font-size: 20px;
+			line-height: 1.7;
+		}
+	}
+}

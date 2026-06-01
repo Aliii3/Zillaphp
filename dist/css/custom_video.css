@@ -1,0 +1,115 @@
+/* site base */
+.custom_video {
+  text-align: center;
+}
+
+.custom_video .section_intro .section_title {
+  margin-top: 30px;
+}
+
+.custom_video .section_intro .section_subtitle {
+  margin-bottom: 37px;
+}
+
+.custom_video .video_player {
+  margin-bottom: 50px;
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.custom_video .video_player .player_container {
+  position: relative;
+}
+
+.custom_video .video_player .player_container .overlay {
+  content: '';
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.custom_video .video_player .player_container .overlay .player_buttons {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .custom_video .video_player .player_container .overlay .player_buttons {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.custom_video .video_player .player_container .overlay .player_buttons img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 250ms ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.custom_video .video_player .player_container .overlay .player_buttons .play-icon {
+  opacity: 1;
+}
+
+.custom_video .video_player .player_container .overlay .player_buttons .pause-icon {
+  opacity: 0;
+}
+
+.custom_video .video_player .player_container .overlay .player_buttons.toggle .play-icon {
+  opacity: 0;
+}
+
+.custom_video .video_player .player_container .overlay:hover .player_buttons.toggle .pause-icon {
+  opacity: 1;
+}
+
+.custom_video .video_player .player_container .viewer {
+  height: 100%;
+  width: 100%;
+  height: 151px;
+}
+
+@media screen and (min-width: 992px) {
+  .custom_video .video_player .player_container .viewer {
+    height: 425px;
+  }
+}
+
+.custom_video .video_player .player_container .viewer[poster] {
+  width: 100%;
+  object-fit: cover;
+}
+
+.custom_video .section_content {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: normal;
+  line-height: 1.7;
+  font-size: 16px;
+  color: #7b8591;
+  white-space: break-spaces;
+  text-align: justify;
+}
+
+@media screen and (min-width: 992px) {
+  .custom_video .section_content {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=custom_video.css.map */

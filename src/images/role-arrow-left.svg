@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Group_19807" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2,.cls-3{fill:#49c8ef;stroke:#49c8ef}.cls-3{opacity:.47}
+        </style>
+    </defs>
+    <circle id="Ellipse_582" cx="12" cy="12" r="12" fill="#fff"/>
+    <g id="down-arrow" transform="rotate(-90 11.13 7.09)">
+        <g id="Group_19805" transform="translate(.001 1)">
+            <path id="Path_19325" d="M11.838 6.338L6.145.645.453 6.338a.267.267 0 0 1-.378-.378L5.957.078a.267.267 0 0 1 .378 0l5.881 5.882a.267.267 0 0 1-.378.378z" class="cls-2"/>
+            <path id="Path_19326" d="M5.883 3.15L3.054.321.225 3.15a.133.133 0 0 1-.188-.188L2.96.039a.133.133 0 0 1 .188 0l2.923 2.923a.133.133 0 1 1-.185.191z" class="cls-3" transform="translate(3.093 6.427)"/>
+            <path id="Path_19328" d="M2.889 1.547L1.5.157.111 1.547a.065.065 0 0 1-.092-.092L1.454.019a.065.065 0 0 1 .092 0l1.435 1.435a.065.065 0 1 1-.091.094z" class="cls-3" transform="translate(4.649 13.239)"/>
+        </g>
+        <path id="Path_19327" d="M6.146 0a.267.267 0 0 0-.189.078L.075 5.96a.267.267 0 0 0 .378.378L6.146.645l5.692 5.693a.267.267 0 0 0 .378-.378L6.335.079A.268.268 0 0 0 6.146 0z" class="cls-2"/>
+    </g>
+</svg>

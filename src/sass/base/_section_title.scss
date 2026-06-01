@@ -1,0 +1,27 @@
+// .section-title{
+// 	margin-bottom: 15px;
+// 	font-family: 'Source Sans 3', sans-serif;
+// 	text-transform: uppercase;
+// 	font-size: 16px;
+// 	font-weight: normal;
+// 	line-height: 1.25;
+// 	letter-spacing: 5.44px;
+// 	color: $secondary;
+// }
+.section_title {
+	font-family: 'Source Sans 3', sans-serif;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 4.08px;
+	color: $secondary;
+	margin-bottom: 6px;
+
+	@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+		font-size: 16px;
+		line-height: 1.25;
+		letter-spacing: 5.44px;
+		margin-bottom: 17px;
+	}
+}

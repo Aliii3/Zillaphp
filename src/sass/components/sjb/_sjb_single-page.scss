@@ -1,0 +1,225 @@
+.sjb-single-page {
+	margin-top: 0;
+	@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+		margin-top: 24px;
+	}
+	.job_meta {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		list-style-type: none;
+		margin-bottom: 39px;
+		@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+			margin-bottom: 50px;
+			flex-wrap: unset;
+		}
+		li {
+			display: flex;
+			align-items: center;
+			font-family: 'Source Sans 3', sans-serif;
+			font-size: 16px;
+			font-weight: normal;
+			line-height: 1.69;
+			letter-spacing: 0.16px;
+			color: #7b8591;
+			margin-bottom: 20px;
+			img {
+				display: inline-block;
+				margin-right: 10px;
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				max-width: 20px;
+				max-height: 20px;
+			}
+			&:not(:last-child) {
+				margin-right: 59px;
+			}
+
+			@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+				margin-bottom: 0;
+				&:not(:last-child) {
+					margin-right: 17px;
+				}
+			}
+
+			&:last-child {
+				white-space: nowrap;
+			}
+		}
+	}
+
+	.job-description {
+		font-family: 'Source Sans 3', sans-serif;
+		font-size: 20px;
+		font-weight: normal;
+		line-height: 1.45;
+		color: #7b8591;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: 'Mermaid';
+			font-size: 20px;
+			font-weight: normal;
+			line-height: 1.26;
+			color: $primary;
+			margin-bottom: 17px;
+			@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+				margin-bottom: 40px;
+				font-size: 50px;
+			}
+			&:not(:first-of-type) {
+				margin-top: 80px;
+			}
+		}
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+			margin-left: 5px;
+			li {
+				position: relative;
+				padding-left: 20px;
+				font-family: 'Source Sans 3', sans-serif;
+				font-weight: normal;
+				letter-spacing: 0.16px;
+				line-height: 1.69;
+				font-size: 16px;
+				color: #7b8591;
+				&:not(:last-child) {
+					margin-bottom: 20px;
+				}
+				&::before {
+					content: '';
+					position: absolute;
+					width: 11px;
+					height: 11px;
+					background-color: $secondary;
+					transform: rotate(45deg) scale(0.75);
+					top: 5px;
+					left: -7px;
+				}
+			}
+			@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+				li {
+					font-size: 20px;
+					padding-left: 30px;
+					&:not(:last-child) {
+						margin-bottom: 30px;
+					}
+					&::before {
+						width: 15px;
+						height: 15px;
+						top: 5px;
+						left: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.jobpost-form {
+		h3 {
+			margin: 60px 0 26px;
+			font-family: 'Mermaid';
+			font-weight: normal;
+			text-align: center;
+			line-height: 1.26;
+			font-size: 24px;
+			color: $primary;
+			@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+				margin: 100px 0 40px;
+				font-size: 50px;
+			}
+		}
+
+		.file_input {
+			margin-top: 0;
+		}
+
+		.note_list {
+			margin-top: 25px;
+			@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+				margin-top: 0;
+			}
+		}
+
+		.validity-note {
+			color: #f00;
+			display: none;
+			font-size: 14px;
+			font-family: 'Source Sans 3', sans-serif; font-weight: 300;
+			margin-top: 10px;
+		}
+
+		.app-submit {
+			display: block;
+			margin: auto;
+			margin-top: 43px;
+			margin-bottom: 60px;
+			padding: 10px 65px 10px 53px;
+			@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+				padding: 19px 110px 19px 89px;
+				margin-top: 60px;
+				margin-bottom: 130px;
+			}
+			&[disabled='disabled'] {
+				cursor: not-allowed;
+			}
+		}
+
+		.flag-container {
+			.selected-flag {
+				&:focus {
+					outline: 0;
+				}
+			}
+			ul {
+				li {
+					font-family: 'Source Sans 3', sans-serif;
+					color: $primary;
+					font-size: 14px;
+				}
+			}
+		}
+
+		.sjb-loading {
+			display: none;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	.alert {
+		width: fit-content;
+		margin: 80px auto 100px;
+		background-color: $success;
+		font-family: 'Source Sans 3', sans-serif; font-weight: 300;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 1.36;
+		color: #f3f3f4;
+		padding: 33px 24px;
+		&.alert-success {
+			position: relative;
+			padding-left: 65px;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 5%;
+				transform: translateY(-50%);
+				background-image: url('../images/check-circle.svg');
+				width: 30px;
+				height: 30px;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+}

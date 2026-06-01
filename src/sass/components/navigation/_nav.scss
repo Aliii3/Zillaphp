@@ -1,0 +1,151 @@
+.hidden_body {
+	overflow: hidden;
+}
+
+nav {
+	padding: 25px 0;
+	background-color: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	transition: all 300ms ease-in-out;
+
+	&.show {
+		background-color: $primary;
+	}
+	&.hide {
+		top: -100px;
+	}
+	.brand {
+		display: block;
+		img {
+			display: block;
+			max-width: 100%;
+			width: 83px;
+			height: 27px;
+			object-fit: contain;
+			@media screen and (min-width: #{map-get($grid-breakpoints, sm)}) {
+				height: auto;
+				width: 143px;
+				height: 45px;
+			}
+		}
+		h1 {
+			color: $secondary;
+			font-size: 25px;
+		}
+	}
+
+	.navigation {
+		display: none;
+		@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+			display: block;
+		}
+		ul {
+			list-style-type: none;
+			padding: 0;
+			height: 100%;
+			li {
+				position: relative;
+				display: block;
+				margin-right: 40px;
+				a {
+					position: relative;
+					display: block;
+					padding: 7px 0;
+					align-items: center;
+					text-decoration: none;
+					font-family: 'Source Sans 3', sans-serif;
+					font-weight: normal;
+					font-size: 14px;
+					line-height: 1.36;
+					letter-spacing: 0.21px;
+					color: #fff;
+					text-transform: capitalize;
+					&::after {
+						position: absolute;
+						content: '';
+						bottom: 0;
+						left: 0;
+						height: 4px;
+						width: 0;
+						background-color: $secondary;
+						transition: all 150ms ease-in-out;
+					}
+				}
+
+				.sub-menu {
+					display: none;
+					position: absolute;
+					min-width: 230px;
+					height: auto;
+					padding: 15px 25px;
+					text-align: left;
+					background-color: #fff;
+					top: 100%;
+					left: 0;
+
+					li {
+						display: block;
+						width: 100%;
+						margin-bottom: 25px;
+
+						&:last-child {
+							margin-bottom: 0;
+						}
+
+						a {
+							padding: 0;
+							white-space: nowrap;
+							color: $primary;
+							transition: all 0.3s ease-out;
+
+							&:after {
+								content: none;
+							}
+							&:hover {
+								font-family: 'Source Sans 3', sans-serif; font-weight: 600;
+							}
+						}
+					}
+				}
+
+				&:hover,
+				&:focus {
+					a {
+						&::after {
+							width: 100%;
+						}
+					}
+
+					.sub-menu {
+						display: block;
+					}
+				}
+
+				&.current-menu-item,
+				&.current-menu-parent {
+					a {
+						&::after {
+							width: 100%;
+						}
+					}
+				}
+
+				@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+					display: inline-block;
+				}
+			}
+
+			@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+				text-align: right;
+			}
+		}
+
+		&.open {
+			display: block;
+		}
+	}
+}

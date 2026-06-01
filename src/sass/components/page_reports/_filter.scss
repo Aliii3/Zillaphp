@@ -1,0 +1,15 @@
+.categories_container {
+	// margin-bottom: 40px;
+	@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+		// margin-bottom: 76px;
+	}
+	label {
+		font-family: 'Source Sans 3', sans-serif; font-weight: 300;
+		font-size: 14px;
+	}
+	select {
+		padding: 0;
+		border: 0;
+		background-color: transparent;
+	}
+}

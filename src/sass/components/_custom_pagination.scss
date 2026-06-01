@@ -1,0 +1,41 @@
+.custom_pagination {
+	position: relative;
+	text-align: center;
+	z-index: auto;
+	ul {
+		li {
+			display: inline-block;
+			font-family: 'Source Sans 3', sans-serif; font-weight: 600;
+			font-size: 18px;
+			font-weight: normal;
+			line-height: 1.89;
+			letter-spacing: normal;
+			text-align: left;
+			color: #fff;
+			text-align: center;
+			margin-left: 10px;
+			.current {
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				background-color: $secondary;
+				display: block;
+				color: #fff;
+			}
+			a {
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				color: #303236;
+				display: block;
+				text-decoration: none;
+			}
+			i {
+				color: #303236;
+			}
+			.page-numbers.dots {
+				color: #787878;
+			}
+		}
+	}
+}

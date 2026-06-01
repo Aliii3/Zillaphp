@@ -1,0 +1,72 @@
+@import '../../base/color_variables';
+
+#deals-groups,
+#sectors_covered-groups,
+#proposed_coverage_countries-groups,
+#proposed_sectors_covered-groups,
+#proposed_countries_covered-groups,
+#track_record_sectors_covered-groups,
+#track_record_countries_covered-groups,
+#proposed_coverage_sectores-groups {
+	&:focus {
+		outline: 0;
+	}
+	.wpcf7-field-group {
+		&:not(:last-child) {
+			.wpcf7-field-group-add {
+				display: none;
+			}
+		}
+	}
+}
+
+.wpcf7-field-group-add,
+.wpcf7-field-group-remove {
+	font-family: 'Source Sans 3', sans-serif; font-weight: 700;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.69;
+	color: $secondary;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	outline: 0;
+	display: block;
+	margin: auto;
+	img {
+		display: inline-block;
+		width: 14px;
+		height: 14px;
+		margin-right: 7px;
+	}
+}
+.wpcf7-field-group-add {
+	margin-top: 30px;
+}
+
+.wpcf7-field-group-remove {
+	color: #d02323;
+	position: absolute;
+	top: -40px;
+	right: 0;
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	img {
+		width: 20px;
+		height: auto;
+	}
+}
+
+[data-wpcf7-group-id='deals'] {
+	.wpcf7-field-group-remove {
+		top: 30px;
+	}
+}
+
+.wpcf7-field-group {
+	position: relative;
+	&:not(:first-child) {
+		margin-top: 60px;
+	}
+}

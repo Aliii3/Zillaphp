@@ -1,0 +1,114 @@
+$icons_list: (
+	arrow_right: (
+		background-image: url('../images/right-arrow.svg'),
+	),
+	arrow_right-colored: (
+		background-image: url('../images/right-arrow-colored.svg'),
+	),
+	arrow_down: (
+		background-image: url('../images/down-arrow.svg'),
+	),
+	arrow_up: (
+		background-image: url('../images/up-arrow.svg'),
+	),
+	search: (
+		background-image: url('../images/search-icon.svg'),
+	),
+);
+
+.btn {
+	display: inline-block;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	font-family: 'Source Sans 3', sans-serif; font-weight: 700;
+	font-weight: normal;
+	text-decoration: none;
+	transition: all 0.3s ease-out;
+	&::after {
+		transition: all 0.3s ease-out;
+	}
+
+	&-primary {
+		font-size: 14px;
+		// line-height: 1.36;
+		letter-spacing: normal;
+		background-color: $secondary;
+		color: #fff;
+		padding: 10px 57px 10px 35px;
+
+		&:hover,
+		&:focus {
+			color: #fff;
+			background-color: #1e9ec4;
+		}
+	}
+
+	&-secondary {
+		font-size: 18px;
+		line-height: 1.3;
+		letter-spacing: normal;
+		background-color: transparent;
+		color: $secondary;
+
+		&:hover,
+		&:focus {
+			color: #1e9ec4;
+			background-color: transparent;
+			&::after {
+				filter: invert(45%) sepia(63%) saturate(572%) hue-rotate(149deg) brightness(103%)
+					contrast(92%);
+			}
+		}
+	}
+
+	@each $icon_name, $map in $icons_list {
+		&-icon-#{$icon_name} {
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				margin-left: 5px;
+				background-image: map-get($map, background-image);
+				background-repeat: no-repeat;
+				background-size: contain;
+				width: 6px;
+				height: 6px;
+			}
+		}
+	}
+
+	&-inactive,
+	&[disabled] {
+		opacity: 50%;
+	}
+
+	&[disabled] {
+		cursor: not-allowed;
+	}
+	@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+		&-primary {
+			font-size: 20px;
+			line-height: 1.3;
+			padding: 18px 69px 18px 47px;
+		}
+
+		&-secondary {
+			font-size: 16px;
+			line-height: 1.69;
+			letter-spacing: 0.24px;
+		}
+
+		@each $icon_name, $map in $icons_list {
+			&-icon-#{$icon_name} {
+				&::after {
+					margin-left: 12px;
+					width: 10px;
+					height: 10px;
+				}
+			}
+		}
+	}
+}

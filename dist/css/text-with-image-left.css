@@ -1,0 +1,104 @@
+/* site base */
+.text-with-image-left {
+  padding-top: 50px;
+}
+
+.text-with-image-left .image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 322px;
+  height: 348px;
+  margin: auto;
+  margin-bottom: 24px;
+}
+
+.text-with-image-left .image-wrapper img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-with-image-left .content-wrapper {
+  max-width: 505px;
+  text-align: center;
+}
+
+.text-with-image-left .content-wrapper .section_subtitle {
+  margin-bottom: 37px;
+  position: relative;
+  text-align: left;
+}
+
+@media screen and (max-width: 576px) {
+  .text-with-image-left .content-wrapper .section_subtitle {
+    font-size: 28px;
+  }
+}
+
+.text-with-image-left .content-wrapper .section-content {
+  text-align: left;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: normal;
+  line-height: 1.25;
+  color: #7b8591;
+  margin-bottom: 24px;
+}
+
+.text-with-image-left .content-wrapper .section-content strong {
+  font-family: 'Source Sans 3', sans-serif; font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .text-with-image-left .image-wrapper {
+    margin-bottom: 0;
+  }
+  .text-with-image-left .content-wrapper {
+    margin-top: 40px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .text-with-image-left {
+    padding-top: 100px;
+  }
+  .text-with-image-left .image-wrapper {
+    max-width: 485px;
+    height: 525px;
+  }
+  .text-with-image-left .content-wrapper {
+    margin-top: 72px;
+    max-width: 505px;
+  }
+  .text-with-image-left .content-wrapper .section_subtitle {
+    margin-bottom: 37px;
+    position: relative;
+  }
+  .text-with-image-left .content-wrapper .section_subtitle::after {
+    content: '';
+    position: absolute;
+    background-image: url("../images/text-shield-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -38px;
+    right: 0;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 992px) and (min-width: 1200px) {
+  .text-with-image-left .content-wrapper .section_subtitle::after {
+    right: 11%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .text-with-image-left .content-wrapper .section-content {
+    margin: 37px 0 23px;
+    font-size: 20px;
+    line-height: 1.7;
+  }
+}
+
+/*# sourceMappingURL=text-with-image-left.css.map */

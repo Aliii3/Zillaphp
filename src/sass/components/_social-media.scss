@@ -1,0 +1,16 @@
+.social-media {
+	list-style-type: none;
+	li {
+		display: inline-block;
+		line-height: 19px;
+		margin-right: 24px;
+		a {
+			img {
+				width: 19px;
+				height: 19px;
+				object-fit: contain;
+				display: block;
+			}
+		}
+	}
+}

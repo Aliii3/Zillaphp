@@ -1,0 +1,32 @@
+.banner_style_2 {
+  padding: 43px 0 59px;
+  text-align: center;
+  background-image: url("../images/banner-style-2-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.banner_style_2 .section_subtitle {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.banner_style_2 .section_content {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .banner_style_2 {
+    padding: 98px 0 179px;
+  }
+  .banner_style_2 .section_subtitle {
+    font-size: 55px;
+    margin-bottom: 18px;
+  }
+  .banner_style_2 .section_content {
+    margin-bottom: 57px;
+  }
+}
+
+/*# sourceMappingURL=banner-style-2.css.map */

@@ -1,0 +1,128 @@
+/* site base */
+@import '../base/bp_variables';
+@import '../base/color_variables';
+
+.banner-style-1 {
+	background-color: $primary;
+	margin-top: 78px;
+	.custom-container-fluid {
+		position: relative;
+		padding: 40px 0 50px;
+		max-width: 1600px;
+		margin: 0 auto;
+		&:before {
+			content: '';
+			z-index: 0;
+			position: absolute;
+			background-image: url('../images/shield-cut.svg');
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			width: 71%;
+			max-width: 255px;
+			height: 284px;
+			top: -31px;
+			left: 4%;
+		}
+
+		.content-wrapper {
+			width: 72%;
+			max-width: 261px;
+			margin-left: 17%;
+			position: relative;
+			z-index: 2;
+			.section_title {
+				margin-bottom: 5px;
+			}
+			.section_subtitle {
+				color: #eff5f8;
+				margin-bottom: 14px;
+				span {
+					margin-left: 10px;
+					display: inline-block;
+					font-family: 'Source Sans 3', sans-serif; font-weight: 300;
+					letter-spacing: normal;
+					font-size: 24px;
+				}
+			}
+		}
+
+		.image-wrapper {
+			display: none;
+		}
+	}
+	@media screen and (min-width: #{map-get($grid-breakpoints, sm)}) and (max-width: map-get($map: $grid-breakpoints, $key: lg)) {
+		.custom-container-fluid {
+			&:before {
+				width: 65%;
+				max-width: 340px;
+				height: 370px;
+				top: -40px;
+			}
+			.content-wrapper {
+				width: 85%;
+				max-width: 420px;
+				margin-left: 10%;
+			}
+		}
+	}
+
+	@media screen and (min-width: #{map-get($grid-breakpoints, md)}) and (max-width: map-get($map: $grid-breakpoints, $key: lg)) {
+		.custom-container-fluid {
+			padding: 60px 0 70px;
+			.content-wrapper {
+				max-width: 480px;
+			}
+		}
+	}
+
+	@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+		margin-top: 0;
+
+		.custom-container-fluid {
+			padding: 85px 0 102px;
+			&:before {
+				// width: 40%;
+				max-width: unset;
+				width: 545px;
+				// height: 575px;
+				// top: -60px;
+				height: 593px;
+				top: -63px;
+				left: 7%;
+			}
+
+			.content-wrapper {
+				width: 80%;
+				max-width: 500px;
+				.section_title {
+					margin-bottom: 20px;
+				}
+				.section_subtitle {
+					margin-bottom: 40px;
+					span {
+						margin-left: 10px;
+						font-size: 24px;
+					}
+				}
+			}
+
+			.image-wrapper {
+				display: block;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				width: 43%;
+				overflow: hidden;
+				img {
+					position: absolute;
+					top: 0;
+					right: 0;
+					z-index: 1;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}

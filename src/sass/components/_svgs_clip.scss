@@ -1,0 +1,19 @@
+.clip-shield-svg {
+	display: block;
+	width: 485px;
+	height: 525px;
+	-webkit-clip-path: url(#shield-clip-path);
+	clip-path: url(#shield-clip-path);
+}
+
+.svg {
+	max-width: 100%;
+}
+
+.banner-style-1-svg {
+	width: 100%;
+	height: 350px;
+	background-size: cover;
+	-webkit-clip-path: url(#banner-style-1-svg);
+	clip-path: url(#banner-style-1-svg);
+}

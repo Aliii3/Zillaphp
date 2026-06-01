@@ -1,0 +1,166 @@
+/* site base */
+@font-face {
+  font-family: Mermaid;
+  src: url("../../fonts/Mermaid1001.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.member_page_data .member_data_wrapper {
+  margin-top: -80px;
+}
+
+.member_page_data .member_data_wrapper img {
+  display: block;
+  max-width: 267px;
+  height: 267px;
+  object-fit: cover;
+}
+
+.member_page_data .member_data_wrapper h2 {
+  font-family: 'Mermaid';
+  font-size: 24px;
+  color: #12264a;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  line-height: 1.21;
+}
+
+.member_page_data .member_data_wrapper h3 {
+  font-family: 'Source Sans 3', sans-serif; font-weight: 300;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.25;
+  letter-spacing: 0.3px;
+  color: #7b8591;
+  margin-bottom: 10px;
+}
+
+.member_page_data .member_data_wrapper a {
+  display: block;
+  text-decoration: none;
+}
+
+.member_page_data .member_data_wrapper a img {
+  width: 25px;
+  height: 25px;
+}
+
+.member_page_data .member_content {
+  margin-top: 40px;
+}
+
+.member_page_data .member_content:first-child {
+  margin-top: 50px;
+}
+
+.member_page_data .member_content:last-child {
+  margin-bottom: 60px;
+}
+
+.member_page_data .member_content .member_section_title {
+  font-family: 'Source Sans 3', sans-serif; font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #12264a;
+  margin-bottom: 20px;
+}
+
+.member_page_data .member_content p, .member_page_data .member_content ul li {
+  color: #7b8591;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.member_page_data .member_content ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.member_page_data .member_content ul li {
+  position: relative;
+}
+
+.member_page_data .member_content ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.member_page_data .member_content ul li::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #4dc8ed;
+  -ms-transform: rotate(45deg) scale(0.75);
+      transform: rotate(45deg) scale(0.75);
+  top: 7px;
+  left: -20px;
+}
+
+@media screen and (min-width: 992px) {
+  .member_page_data .member_data_wrapper {
+    margin-top: -135px;
+  }
+  .member_page_data .member_data_wrapper img {
+    width: 100%;
+    max-width: 352px;
+    height: 352px;
+  }
+  .member_page_data .member_data_wrapper h2 {
+    margin-top: 20px;
+    margin-bottom: 14px;
+    font-size: 32px;
+    line-height: 0.73;
+  }
+  .member_page_data .member_data_wrapper h3 {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  .member_page_data .member_data_wrapper a img {
+    width: 30px;
+    height: 30px;
+  }
+  .member_page_data .member_content {
+    margin-top: 60px;
+    margin-left: 10px;
+  }
+  .member_page_data .member_content:first-child {
+    margin-top: 0;
+  }
+  .member_page_data .member_content:last-child {
+    margin-bottom: 100px;
+  }
+  .member_page_data .member_content p, .member_page_data .member_content ul li {
+    font-size: 20px;
+    line-height: 1.45;
+  }
+  .member_page_data .member_content ul {
+    margin-left: 30px;
+  }
+  .member_page_data .member_content ul li {
+    font-size: 20px;
+    line-height: 1.45;
+  }
+  .member_page_data .member_content ul li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .member_page_data .member_content ul li::before {
+    width: 15px;
+    height: 15px;
+    left: -30px;
+  }
+  .member_page_data .member_content .member_section_title {
+    font-family: 'Source Sans 3', sans-serif; font-weight: 700;
+    font-size: 28px;
+    line-height: 1.36;
+    color: #12264a;
+    margin-bottom: 28px;
+  }
+}
+
+/*# sourceMappingURL=single-team.css.map */

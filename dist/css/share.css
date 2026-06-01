@@ -1,0 +1,117 @@
+.share-services {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    z-index: 10;
+    overflow: hidden;
+    min-width: 2.5rem;
+    height: 44px;
+    border-top: 0px;
+    border-bottom: 0px;
+    margin: -15px 0 0;
+}
+@media all and (min-width: 268px) {
+    .share-services {
+        display: block;
+    }
+}
+.share-services button {
+    position: absolute;
+    border-radius: 3.125rem;
+    border: 1px solid #B9B9B9;
+    background-color: transparent;
+    font-size: 1.125rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.1875rem;
+    padding: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    z-index: 10;
+    right: 0;
+}
+
+.share-services.expanded button {
+    border: 1px solid #171717;
+}
+
+
+.share-services.expanded button.icon-share {
+    display: none;
+}
+
+.share-services button.icon-share:hover {
+    background: #12264a;
+    border: 0;
+    cursor: pointer;
+}
+
+.share-services button:hover i {
+    color: #FFFFFF;
+}
+.share-services button:focus {
+    outline: none;
+}
+.share-services button.icon-share {
+    color: #B9B9B9;
+}
+.share-services button.icon-share:before {
+    position: relative;
+    left: -.0625rem;
+}
+.share-services button.icon-close_large {
+    color: #316BB6;
+    font-size: 1.125rem;
+    border: 0;
+}
+.share-services div.share-options a.icon-close_large:hover {
+    color: #316BB6;
+}
+.share-services div.share-options {
+    background: #12264a;
+    border-radius: 45px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    width: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    height: 100%;
+}
+.share-services.expanded div.share-options {
+    width: 330px;
+    padding-left: 10px;
+    opacity: 1;
+}
+.share-services div.share-options a {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'UniversLTW01-57Condense 723821';
+    text-transform: uppercase;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+    font-size: 18px;
+}
+.share-services div.share-options a.more {
+    font-size: .875rem;
+}
+.share-services div.share-options a.more i {
+    position: relative;
+    top: -1px;
+}
+.share-services div.share-options i {
+    line-height: 2.5rem;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-family: 'UniversLTW01-67BoldCn';
+    font-style: normal;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+}

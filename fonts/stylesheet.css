@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Rotunda';
+    src: url('Rotunda-Bold.eot');
+    src: url('Rotunda-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Rotunda-Bold.woff2') format('woff2'),
+        url('Rotunda-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotunda';
+    src: url('Rotunda-Black.eot');
+    src: url('Rotunda-Black.eot?#iefix') format('embedded-opentype'),
+        url('Rotunda-Black.woff2') format('woff2'),
+        url('Rotunda-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotunda';
+    src: url('Rotunda-BlackItalic.eot');
+    src: url('Rotunda-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Rotunda-BlackItalic.woff2') format('woff2'),
+        url('Rotunda-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotunda';
+    src: url('Rotunda-Hairline.eot');
+    src: url('Rotunda-Hairline.eot?#iefix') format('embedded-opentype'),
+        url('Rotunda-Hairline.woff2') format('woff2'),
+        url('Rotunda-Hairline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotunda';
+    src: url('Rotunda-Medium.eot');
+    src: url('Rotunda-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Rotunda-Medium.woff2') format('woff2'),
+        url('Rotunda-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotunda';
+    src: url('Rotunda-Light.eot');
+    src: url('Rotunda-Light.eot?#iefix') format('embedded-opentype'),
+        url('Rotunda-Light.woff2') format('woff2'),
+        url('Rotunda-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotunda';
+    src: url('Rotunda-HairlineItalic.eot');
+    src: url('Rotunda-HairlineItalic.eot?#iefix') format('embedded-opentype'),
+        url('Rotunda-HairlineItalic.woff2') format('woff2'),
+        url('Rotunda-HairlineItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotunda';
+    src: url('Rotunda-Regular.eot');
+    src: url('Rotunda-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Rotunda-Regular.woff2') format('woff2'),
+        url('Rotunda-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotunda';
+    src: url('Rotunda-Italic.eot');
+    src: url('Rotunda-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Rotunda-Italic.woff2') format('woff2'),
+        url('Rotunda-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotunda';
+    src: url('Rotunda-MediumItalic.eot');
+    src: url('Rotunda-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Rotunda-MediumItalic.woff2') format('woff2'),
+        url('Rotunda-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotunda';
+    src: url('Rotunda-ExtraBold.eot');
+    src: url('Rotunda-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Rotunda-ExtraBold.woff2') format('woff2'),
+        url('Rotunda-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotunda';
+    src: url('Rotunda-LightItalic.eot');
+    src: url('Rotunda-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Rotunda-LightItalic.woff2') format('woff2'),
+        url('Rotunda-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotunda';
+    src: url('Rotunda-Thin.eot');
+    src: url('Rotunda-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Rotunda-Thin.woff2') format('woff2'),
+        url('Rotunda-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotunda';
+    src: url('Rotunda-ExtraBoldItalic.eot');
+    src: url('Rotunda-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Rotunda-ExtraBoldItalic.woff2') format('woff2'),
+        url('Rotunda-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotunda';
+    src: url('Rotunda-BoldItalic.eot');
+    src: url('Rotunda-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Rotunda-BoldItalic.woff2') format('woff2'),
+        url('Rotunda-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotunda';
+    src: url('Rotunda-ThinItalic.eot');
+    src: url('Rotunda-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Rotunda-ThinItalic.woff2') format('woff2'),
+        url('Rotunda-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+

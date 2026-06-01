@@ -1,0 +1,68 @@
+/* site base */
+.partners {
+  text-align: center;
+  padding: 73px 0 97px;
+}
+
+@media screen and (min-width: 992px) {
+  .partners {
+    padding: 107px 0;
+  }
+}
+
+.partners .partner {
+  width: 100%;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  outline: 0;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .partners .partner {
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 190px;
+  }
+}
+
+.partners .partner img {
+  display: block;
+  max-width: 152px;
+  max-height: 87px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 576px) {
+  .partners .partner img {
+    max-width: 114px;
+    max-height: 49px;
+  }
+}
+
+.partners .partner:focus {
+  outline: 0;
+}
+
+.partners .partner::after {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  width: 0;
+  height: 45px;
+  border: 1px solid #dbeaf1;
+}
+
+.partners .btn {
+  margin-top: 70px;
+}
+
+/*# sourceMappingURL=partners_carousel.css.map */

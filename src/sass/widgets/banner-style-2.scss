@@ -1,0 +1,30 @@
+@import '../base/bp_variables';
+@import '../base/color_variables';
+
+.banner_style_2 {
+	padding: 43px 0 59px;
+	text-align: center;
+	background-image: url('../images/banner-style-2-bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	.section_subtitle {
+		font-size: 28px;
+		margin-bottom: 16px;
+	}
+	.section_content {
+		margin-bottom: 10px;
+	}
+
+	@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+		padding: 58px 0 107px;
+
+		.section_subtitle {
+			font-size: 55px;
+			margin-bottom: 18px;
+		}
+		.section_content {
+			margin-bottom: 34px;
+		}
+	}
+}

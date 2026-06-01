@@ -1,0 +1,71 @@
+.default_page {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: 'Source Sans 3', sans-serif; font-weight: 600;
+		font-size: 20px;
+		font-weight: normal;
+		line-height: 1.33;
+		color: $secondary;
+		margin-top: 63px;
+		margin-bottom: 10px;
+		@media screen and (min-width: map-get($map: $grid-breakpoints, $key: lg)) {
+			font-size: 24px;
+			margin-bottom: 15px;
+		}
+	}
+
+	ul {
+		list-style-type: none;
+		li {
+			font-family: 'Source Sans 3', sans-serif;
+			font-size: 16px;
+			font-weight: normal;
+			line-height: 1.4;
+			letter-spacing: 0.16px;
+			color: $primary;
+			position: relative;
+			padding-left: 25px;
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+			&:before {
+				position: absolute;
+				content: "";
+				width: 15px;
+				height: 15px;
+				transform: rotate(45deg) scale(0.75);
+				left: 0;
+				top: 5px;
+				background-color: $secondary;
+			}
+		}
+		@media screen and (min-width: map-get($map: $grid-breakpoints, $key: lg)) {
+			li {
+				font-size: 20px;
+				letter-spacing: 0.2px;
+				&:not(:last-child) {
+					margin-bottom: 40px;
+				}
+				&:before {
+					width: 18px;
+					height: 18px;
+				}
+			}
+		}
+	}
+
+	p {
+		font-family: 'Source Sans 3', sans-serif;
+		line-height: 1.5;
+		color: #7b8591;
+		font-size: 16px;
+		@media screen and (min-width: map-get($map: $grid-breakpoints, $key: lg)) {
+			line-height: 1.7;
+			font-size: 20px;
+		}
+	}
+}

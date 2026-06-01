@@ -1,0 +1,38 @@
+.associates_categories_tabs {
+	list-style-type: none;
+	border: 1px solid $secondary;
+
+	margin-bottom: 40px;
+	width: fit-content;
+	display: flex;
+	li {
+		a {
+			display: block;
+			text-decoration: none;
+			padding: 14px 27px;
+			font-family: 'Source Sans 3', sans-serif;
+			font-size: 16px;
+			line-height: 1.25;
+			letter-spacing: normal;
+			text-align: center;
+			color: #7b8591;
+		}
+		&.active {
+			background-color: $secondary;
+			a {
+				color: #f3f3f4;
+			}
+		}
+	}
+
+	@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+		margin-top: 50px;
+		margin-bottom: 60px;
+		li {
+			a {
+				padding: 17px 63px;
+				font-size: 18px;
+			}
+		}
+	}
+}

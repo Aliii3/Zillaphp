@@ -1,0 +1,20 @@
+/* site base */
+@import '../../base/bp_variables';
+@import '../../base/color_variables';
+
+// item base style
+@import './text-with_icon_item';
+
+.text-with-icon-grid {
+	margin-top: 120px;
+	.section_subtitle {
+		margin-bottom: 30px;
+	}
+	@media screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+		.section_subtitle {
+			margin-bottom: 42px;
+		}
+		margin-top: 0;
+		padding: 78px 0 80px;
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"name": "zilla-capital",
+	"version": "2.0.0",
+	"description": "A custom WordPress theme for Zilla Capital - A fully-featured theme with reusable Drag & Drop widgets",
+  "keywords": [
+		"Custom Theme", "Reusable Widgets"
+	],
+	"main": "./bin/index.js",
+  "bin": {
+		"wp-workflow": "./bin/index.js"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "gulp",
+		"build": "gulp build --prod"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://bitbucket.org/webkeyz/zilla-multiples/src"
+	},
+  "bugs": {
+    "email": "mohamed.najiub@webkeyz.com"
+	},
+	"dependencies": {
+		"@babel/core": "^7.9.0",
+		"@babel/preset-env": "^7.9.0",
+		"@babel/register": "^7.9.0",
+		"babel-loader": "^8.1.0",
+		"bootstrap": "^4.5.3",
+		"browser-sync": "^2.26.12",
+		"chalk": "^4.0.0",
+		"core-js": "^3.6.5",
+		"execa": "^4.0.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-changed": "^4.0.2",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-if": "^3.0.0",
+		"gulp-imagemin": "^7.1.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-strip-debug": "^3.0.0",
+		"inquirer": "^7.1.0",
+		"ora": "^4.0.3",
+		"webpack-stream": "^5.2.1",
+		"yargs": "^15.3.1"
+	},
+	"devDependencies": {
+		"archiver": "^4.0.1",
+		"eslint": "^6.8.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-prettier": "^3.1.3",
+		"prettier": "^2.0.5",
+		"prettier-eslint": "^9.0.1",
+		"prettier-eslint-cli": "^5.0.0",
+		"vinyl-named": "^1.1.0"
+	}
+}

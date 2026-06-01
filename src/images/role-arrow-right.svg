@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2,.cls-3{fill:#49c8ef;stroke:#49c8ef}.cls-3{opacity:.47}
+        </style>
+    </defs>
+    <g id="Group_19806" transform="translate(-523 -703)">
+        <circle id="Ellipse_582" cx="12" cy="12" r="12" fill="#fff" transform="translate(523 703)"/>
+        <g id="down-arrow" transform="rotate(-90 615.337 105.882)">
+            <g id="Group_19805" transform="translate(0 21.273)">
+                <path id="Path_19325" d="M11.859 213.608L6.166 219.3l-5.692-5.692a.267.267 0 0 0-.378.378l5.882 5.882a.267.267 0 0 0 .378 0l5.882-5.882a.267.267 0 0 0-.378-.378z" class="cls-2" transform="translate(-.021 -208.714)"/>
+                <path id="Path_19326" d="M5.9 21.314l-2.825 2.829-2.829-2.829a.133.133 0 0 0-.188.188l2.923 2.923a.133.133 0 0 0 .188 0L6.092 21.5a.133.133 0 1 0-.185-.191z" class="cls-3" transform="translate(3.072 -19.658)"/>
+                <path id="Path_19328" d="M2.91 21.293l-1.389 1.389-1.389-1.389a.065.065 0 0 0-.092.092l1.435 1.435a.065.065 0 0 0 .092 0L3 21.385a.065.065 0 1 0-.091-.094z" class="cls-3" transform="translate(4.628 -24.846)"/>
+            </g>
+            <path id="Path_19327" d="M6.146 219.948a.267.267 0 0 1-.189-.078l-5.882-5.882a.267.267 0 0 1 .378-.378l5.693 5.69 5.692-5.693a.267.267 0 0 1 .378.378l-5.882 5.882a.268.268 0 0 1-.188.081z" class="cls-2" transform="translate(0 -186.443)"/>
+        </g>
+    </g>
+</svg>

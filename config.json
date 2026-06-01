@@ -1,0 +1,59 @@
+{
+  "project_path": "localhost/webkeyz/new-zilla-multiples",
+  "theme_name": "zilla-multiples",
+  "server_port": 3000,
+  "styles": {
+    "src": "/src/sass",
+    "compiled_files": [
+      "/main.scss",
+      "/pages/**/*.scss",
+			"/widgets/**/*.scss"
+    ],
+    "lib": "/lib/**/*.min.css"
+  },
+  "scripts": {
+    "src": "/src/scripts",
+    "compiled_files": [
+      "/main.js",
+      "/pages/**/*.js",
+			"/widgets/**/*.js"
+    ],
+    "lib": "/lib/**/*.min.js"
+  },
+  "images": "/src/images/**/*",
+  "archive_folders": [
+		{
+			"dir_path": "template-parts/",
+			"dist_path": "template-parts"
+		},
+		{
+			"dir_path": "vc-components/",
+			"dist_path": "vc-components"
+		},
+		{
+			"dir_path": "css/",
+			"dist_path": "css"
+		},
+    {
+      "dir_path": "dist/",
+      "dist_path": "dist"
+    },
+    {
+      "dir_path": "fonts/",
+      "dist_path": "fonts"
+    },
+    {
+      "dir_path": "inc/",
+      "dist_path": "inc"
+    },
+    {
+      "dir_path": "utils/",
+      "dist_path": "utils"
+    }
+  ],
+  "archive_files": [
+    "*.php",
+    "*.png",
+    "*.css"
+  ]
+}

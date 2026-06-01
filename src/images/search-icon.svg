@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.305" height="22.305" viewBox="0 0 22.305 22.305">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#edfafd;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}
+        </style>
+    </defs>
+    <g id="Icon_feather-search" transform="translate(-3 -3)">
+        <path id="Path_19362" d="M21.108 12.8a8.3 8.3 0 1 1-8.3-8.3 8.3 8.3 0 0 1 8.3 8.3z" class="cls-1"/>
+        <path id="Path_19363" d="M29.49 29.49l-4.515-4.515" class="cls-1" transform="translate(-6.307 -6.307)"/>
+    </g>
+</svg>

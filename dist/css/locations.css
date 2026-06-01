@@ -1,0 +1,139 @@
+/* site base */
+.locations {
+  margin: 33px 0 60px;
+}
+
+@media screen and (min-width: 992px) {
+  .locations {
+    margin: 50px 0 97px;
+  }
+}
+
+.locations .headquarter p:first-of-type {
+  margin-bottom: 16px;
+  font-family: 'Mermaid';
+  font-weight: normal;
+  color: #4dc8ed;
+  line-height: 1.29;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 992px) {
+  .locations .headquarter p:first-of-type {
+    margin-bottom: 9px;
+  }
+}
+
+.locations .headquarter p:last-of-type {
+  font-family: 'Source Sans 3', sans-serif; font-weight: 300;
+  font-weight: normal;
+  letter-spacing: 0.16px;
+  line-height: 1.63;
+  font-size: 16px;
+  color: #7b8591;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 992px) {
+  .locations .headquarter p:last-of-type {
+    width: 26%;
+    max-width: 346px;
+  }
+}
+
+.locations .headquarter h3 {
+  font-family: 'Mermaid';
+  font-weight: normal;
+  text-align: left;
+  color: #12264a;
+  line-height: 1.43;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.locations iframe {
+  width: 100%;
+  height: 339px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 992px) {
+  .locations iframe {
+    margin-bottom: 60px;
+  }
+}
+
+.locations .another_locations p {
+  margin-bottom: 28px;
+  font-family: 'Mermaid';
+  font-weight: normal;
+  color: #4dc8ed;
+  line-height: 1.29;
+  font-size: 24px;
+}
+
+.locations .another_locations_list {
+  list-style-type: none;
+  text-align: justify;
+}
+
+@media screen and (min-width: 992px) {
+  .locations .another_locations_list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.locations .another_locations_list li {
+  padding-left: 49px;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 992px) {
+  .locations .another_locations_list li {
+    width: calc(100% / 3);
+  }
+}
+
+.locations .another_locations_list li::before {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  -ms-transform: rotate(45deg) scale(0.75);
+      transform: rotate(45deg) scale(0.75);
+  left: 0;
+  top: 10px;
+  background-color: #4dc8ed;
+}
+
+.locations .another_locations_list li h3 {
+  font-family: 'Mermaid';
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 1.43;
+  color: #12264a;
+  margin-bottom: 8.5px;
+}
+
+@media screen and (min-width: 992px) {
+  .locations .another_locations_list li h3 {
+    font-size: 28px;
+  }
+}
+
+.locations .another_locations_list li h4 {
+  font-family: 'Source Sans 3', sans-serif; font-weight: 300;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.63;
+  letter-spacing: 0.16px;
+  color: #7b8591;
+}
+
+/*# sourceMappingURL=locations.css.map */
